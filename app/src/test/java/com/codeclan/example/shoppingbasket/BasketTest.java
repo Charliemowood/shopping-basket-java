@@ -9,6 +9,7 @@ import static org.junit.Assert.*;
  */
 public class BasketTest {
     Basket basket = new Basket();
+    Item item = new Item();
 
     @Test
     public void doesBasketClassExist() {
@@ -20,6 +21,10 @@ public class BasketTest {
         assertEquals(0, basket.countItem());
     }
 
-    
+    @Test
+    public void canAddItem() {
+        basket.addItem(item);
+        assertEquals(1, basket.countItem());
+    }
 
 }
