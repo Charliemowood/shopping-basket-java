@@ -5,4 +5,9 @@ package com.codeclan.example.shoppingbasket;
  */
 
 public class Item {
+    int price = 5;
+
+    public int getPrice() {
+        return this.price;
+    }
 }

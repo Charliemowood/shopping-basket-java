@@ -15,5 +15,10 @@ public class ItemTest {
         assertNotNull(item);
     }
 
+    @Test
+    public void doesItemHavePrice() {
+        assertEquals(5, item.getPrice());
+    }
+
 
 }
