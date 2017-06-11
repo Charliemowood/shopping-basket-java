@@ -8,9 +8,11 @@ import java.util.ArrayList;
 
 public class Basket {
     private ArrayList<Item> inBasket;
+    private int balance = 0;
 
     public Basket() {
         this.inBasket = new ArrayList<Item>();
+        this.balance = balance;
     }
 
     public int countItem() {
@@ -29,6 +31,10 @@ public class Basket {
 
     public void empty() {
         this.inBasket.clear();
+    }
+
+    public int getBalance() {
+        return this.balance;
     }
 
 

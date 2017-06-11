@@ -36,7 +36,6 @@ public class BasketTest {
     }
 
     @Test
-
     public void canEmptyBasket() {
         Item item1 = new Item();
         basket.addItem(item);
@@ -45,4 +44,8 @@ public class BasketTest {
         assertEquals(0, basket.countItem());
     }
 
+    @Test
+    public void doesBalanceStartAt0() {
+        assertEquals(0, basket.getBalance());
+    }
  }
