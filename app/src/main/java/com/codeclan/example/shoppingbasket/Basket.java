@@ -20,4 +20,14 @@ public class Basket {
     public void addItem(Item item) {
         inBasket.add(item);
     }
+
+    public void removeItem(Item item) {
+
+        this.inBasket.remove(item);
+       ;
+    }
+
+
+
 }
+

@@ -27,4 +27,12 @@ public class BasketTest {
         assertEquals(1, basket.countItem());
     }
 
-}
+    @Test
+    public void canRemoveItem() {
+        basket.addItem(item);
+        basket.removeItem(item);
+        assertEquals(0, basket.countItem());
+
+    }
+
+ }
