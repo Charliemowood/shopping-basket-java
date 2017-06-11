@@ -9,9 +9,17 @@ import static org.junit.Assert.*;
  */
 public class BasketTest {
     Basket basket = new Basket();
+
     @Test
     public void doesBasketClassExist() {
         assertNotNull(basket);
     }
+
+    @Test
+    public void doesBasketStart_at0() {
+        assertEquals(0, basket.countItem());
+    }
+
+    
 
 }
