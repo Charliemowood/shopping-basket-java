@@ -39,7 +39,7 @@ public class BasketTest {
     public void canEmptyBasket() {
         Item item1 = new Item();
         basket.addItem(item);
-        basket.addItem(item);
+        basket.addItem(item1);
         basket.empty();
         assertEquals(0, basket.countItem());
     }
@@ -47,5 +47,20 @@ public class BasketTest {
     @Test
     public void doesBalanceStartAt0() {
         assertEquals(0, basket.getBalance());
+    }
+
+    @Test
+    public void doesBalanceIncreaseWhenItemIsAdded() {
+        Item item1 = new Item();
+        basket.addItem(item1);
+        assertEquals(5, basket.getBalance());
+    }
+
+    @Test
+    public void doesBalanceIncreaseWhen2ItemAreAdded() {
+        Item item1 = new Item();
+        basket.addItem(item1);
+        basket.addItem(item);
+        assertEquals(10, basket.getBalance());
     }
  }

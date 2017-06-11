@@ -21,6 +21,7 @@ public class Basket {
 
     public void addItem(Item item) {
         inBasket.add(item);
+        this.balance += item.getPrice();
     }
 
     public void removeItem(Item item) {
