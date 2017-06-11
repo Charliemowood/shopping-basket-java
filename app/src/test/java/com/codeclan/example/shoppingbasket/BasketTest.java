@@ -63,4 +63,12 @@ public class BasketTest {
         basket.addItem(item);
         assertEquals(10, basket.getBalance());
     }
+
+    @Test
+    public void canDoBuyOneGetOneFree() {
+        basket.bogof(item);
+        assertEquals(5, basket.getBalance());
+        assertEquals(2, basket.countItem());
+
+    }
  }

@@ -38,6 +38,12 @@ public class Basket {
         return this.balance;
     }
 
+    public void bogof(Item item) {
+        this.balance += item.getPrice();
+        inBasket.add(item);
+        inBasket.add(item);
+    }
+
 
 
 }
