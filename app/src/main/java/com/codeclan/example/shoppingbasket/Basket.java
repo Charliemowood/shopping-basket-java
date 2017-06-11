@@ -24,7 +24,11 @@ public class Basket {
     public void removeItem(Item item) {
 
         this.inBasket.remove(item);
-       ;
+
+    }
+
+    public void empty() {
+        this.inBasket.clear();
     }
 
 

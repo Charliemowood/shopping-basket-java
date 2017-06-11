@@ -35,4 +35,14 @@ public class BasketTest {
 
     }
 
+    @Test
+
+    public void canEmptyBasket() {
+        Item item1 = new Item();
+        basket.addItem(item);
+        basket.addItem(item);
+        basket.empty();
+        assertEquals(0, basket.countItem());
+    }
+
  }
